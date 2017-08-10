@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Valeria Vozzheva](https://up.htmlacademy.ru/htmlcss/18/user/503315).
-* Наставник: `Неизвестно`.
+* Наставник: [Юлька Долгун](https://htmlacademy.ru/profile/id42333).
 
 ---
 
