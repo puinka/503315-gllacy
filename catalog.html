@@ -12,7 +12,6 @@
       </a>
       <ul class="main-navi-list">
         <li class="main-navi-item"><a href="catalog.html">Каталог</a>
-          <section class="hover dropdown-hover">
             <ul class="dropdown-hover-list">
               <li class="dropdown-hover-item">Новинки</li>
               <li class="dropdown-hover-item">Сливочное</li>
@@ -20,7 +19,6 @@
               <li class="dropdown-hover-item">Фруктовый лед</li>
               <li class="dropdown-hover-item">Мелорин</li>
             </ul>
-          </section>
         </li>
         <li class="main-navi-item"><a href="delivery.html">Доставка и оплата</a></li>
         <li class="main-navi-item"><a href="about.html">О компании</a></li>
@@ -36,15 +34,6 @@
         </li>
         <li class="user-navi-item">
           <a href="#">Вход</a>
-          <div class="hover login-hover">
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-              <input class="login-email" type="email" name="login-email" value="" placeholder="Электронная почта">
-              <input class="login-password" type="password" name="login-password" value="" placeholder="Пароль">
-              <input class="button login-submit-button" type="submit" name="login-button" value="Войти">
-              <a class="restore" href="#">Забыли пароль?</a>
-              <a class="new-user" href="#">Новая регистрация</a>
-            </form>
-          </div>
         </li>
         <li class="user-navi-item">Корзина</li>
       </ul>
@@ -67,34 +56,32 @@
     <section class="filters">
       <h2 class="invisible">Фильтр товаров</h2>
       <form class="" action="https://echo.htmlacademy.ru" method="get">
-        <label>
-          Сортировка
+        <div class="sort-block">
+          <p>Сортировка</p>
           <select class="sort" name="popularity">
             <option value="">по популярности</option>
           </select>
-        </label>
-        <label>
-          Цена: 100 руб. – 500 руб.
-          <input type="" name="slider" value="">
-        </label>
-        <label>
-          Жирность:
-          <fieldset class="filter-fat">
-            <input type="radio" name="fat-group">0%
-            <input type="radio" name="fat-group" checked>до 10%
-            <input type="radio" name="fat-group">до 30%
-            <input type="radio" name="fat-group">выше 30%
-          </fieldset>
-        </label>
-        <label>Наполнители</label>
-        <fieldset class="filter-fillings">
+        </div>
+        <div class="price-block">
+          <p>Цена: 100 руб. – 500 руб.</p>
+          <input type="range" multiple min="100" step="10" max="500" data-values="100 300">
+        </div>
+        <div class="fat-block">
+          <p>Жирность:</p>
+          <input type="radio" name="fat-group">0%
+          <input type="radio" name="fat-group" checked>до 10%
+          <input type="radio" name="fat-group">до 30%
+          <input type="radio" name="fat-group">выше 30%
+        </div>
+        <div class="fillings-block">
+          <p>Наполнители</p>
           <input type="checkbox" name="choco" value="">шоколадные
-          <input type="checkbox" name="choco" value="">сахарные присыпки
-          <input type="checkbox" name="choco" value="">фрукты
-          <input type="checkbox" name="choco" value="">сиропы
-          <input type="checkbox" name="choco" value="">джемы
-        </fieldset>
-        <input type="submit" name="" value="">
+          <input type="checkbox" name="shugar" value="">сахарные присыпки
+          <input type="checkbox" name="fruit" value="">фрукты
+          <input type="checkbox" name="syrop" value="">сиропы
+          <input type="checkbox" name="jam" value="">джемы
+        </div>
+        <input type="submit" name="" value="Применить">
       </form>
     </section>
     <section class="products">
@@ -186,7 +173,7 @@
       </ul>
     </section>
     <ul class="pagination">
-      <li class="currently-selected"><a href="#">1</a></li>
+      <li class="currently-selected">1</li>
       <li><a href="#">2</a></li>
       <li><a href="#">3</a></li>
       <li><a href="#">4</a></li>
@@ -221,5 +208,27 @@
       </div>
     </nav>
   </footer>
+
+  <section class="modal modal-contact">
+    <b>Мы обязательно вам ответим!</b>
+    <form class="vontact-form" action="https://echo.htmlacademy.ru" method="post">
+      <input class="contact-name" type="text" name="contact-name" value="" placeholder="Как вас зовут?">
+      <input class="contact-email" type="email" name="contact-email" value="" placeholder="Ваша почта для ответа?">
+      <textarea class="contact-comment" rows="10">Напишите что-нибудь...</textarea>
+      <input class="button button-contact-send" type="submit" name="contact-send" value="Отправить">
+    </form>
+    <span class="modal-close">X</span>
+  </section>
+
+  <section class="hover login-hover">
+    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+      <input class="login-email" type="email" name="login-email" value="" placeholder="Электронная почта">
+      <input class="login-password" type="password" name="login-password" value="" placeholder="Пароль">
+      <input class="button login-submit-button" type="submit" name="login-button" value="Войти">
+      <a class="restore" href="#">Забыли пароль?</a>
+      <a class="new-user" href="#">Новая регистрация</a>
+    </form>
+  </section>
+  
 </body>
 </html>
