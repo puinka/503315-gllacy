@@ -26,7 +26,7 @@
     </ul>
     <ul class="user-navi">
       <li class="user-navi-item">
-        <a href="#"><img src="img/loupe.svg" alt="search" width="17" height="17"></a>
+        <button class="search"><img src="img/loupe.svg" alt="Поиск" width="17" height="17"></button>
         <div class="hover serach-hover">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <input class="search-request" type="text" name="search-request" value="" placeholder="Что ищем?">
@@ -34,9 +34,11 @@
         </div>
       </li>
       <li class="user-navi-item">
-        <a href="#"><img src="img/entrance.svg" alt="enter" width="21" height="19">Вход</a>
+        <button class="enter-btn"><img src="img/entrance.svg" alt="enter" width="21" height="19">Вход</button>
       </li>
-      <li class="user-navi-item"><img src="img/basket.svg" alt="shopping cart" width="21" height="20">Корзина</li>
+      <li class="user-navi-item">
+      <button class="cart-btn"><img src="img/basket.svg" alt="shopping cart" width="21" height="20">Пусто</button>
+      </li>
     </ul>
     <p>С 10 до 20, ежедневно</p>
     <b class="header-phone">8 812 450-25-25</b>
@@ -93,7 +95,7 @@
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/01.jpg" alt="Сливочное" width="267px" height="267px">
            <b>310₽/кг</b>
-           <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+           <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
          </a>
        </li>
        <li class="hits-item">
@@ -101,7 +103,7 @@
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/02.jpg" alt="Сливочно-кофейное" width="267px" height="267px">
            <b>380₽/кг</b>
-           <p>Сливочно-кофейное с кусочками шоколада</p>
+           <h3>Сливочно-кофейное с кусочками шоколада<h3>
          </a>
        </li>
        <li class="hits-item">
@@ -109,7 +111,7 @@
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/03.jpg" alt="Сливочно-клубничное" width="267px" height="267px">
            <b>355₽/кг</b>
-           <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+           <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
          </a>
        </li>
        <li class="hits-item">
@@ -117,7 +119,7 @@
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/04.jpg" alt="Сливочное крем-брюле" width="267px" height="267px">
            <b>415₽/кг</b>
-           <p>Сливочное крем-брюле с карамельной подливкой</p>
+           <h3>Сливочное крем-брюле с карамельной подливкой</h3>
          </a>
        </li>
      </ul>
@@ -145,7 +147,8 @@
    </article>
 
    <section class="map">
-     <img src="pin.png" alt="pin">
+     <img src="img/pin.svg" alt="pin">
+     <img src="img/map.jpg">
      <div class="contacts">
        <p>Адрес главного офиса и офлайн магазина</p>
        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -190,7 +193,7 @@
     <textarea class="contact-comment" rows="10">Напишите что-нибудь...</textarea>
     <input class="button button-contact-send" type="submit" name="contact-send" value="Отправить">
   </form>
-  <span class="modal-close">X</span>
+  <button class="modal-close">Закрыть</button>
 </section>
 
 <section class="hover login-hover">
