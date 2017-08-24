@@ -8,7 +8,7 @@
   <body>
 <header class="page-header">
   <nav class="main-navi">
-    <a class="main-header-logo">
+    <a href="#" class="main-header-logo">
        <img src="img/logo.svg" alt="Gllacy Shop Logo" width="154" height="64">
     </a>
     <ul class="main-navi-list">
@@ -29,7 +29,8 @@
         <button class="search"><img src="img/loupe.svg" alt="Поиск" width="17" height="17"></button>
         <div class="hover serach-hover">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <input class="search-request" type="text" name="search-request" value="" placeholder="Что ищем?">
+            <label for="search" class="invisible">Поле поиска</label>
+            <input class="search-request" type="text" name="search-request" id="search" placeholder="Что ищем?">
           </form>
         </div>
       </li>
@@ -76,13 +77,13 @@
       <li class="specialties-item raspberry">
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <button type="button" name="buy-jam">Хочу варенье!</button>
+        <a href="#">Хочу варенье!</a>
       </li>
 
       <li class="spetialties-item chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <button type="button" name="buy-chocolate">Хочу шоколадки!</button>
+        <a href="#">Хочу шоколадки!<a href="#">
       </li>
     </ul>
    </section>
@@ -94,7 +95,7 @@
          <a href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/01.jpg" alt="Сливочное" width="267px" height="267px">
-           <b>310₽/кг</b>
+           <b>310<img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
          </a>
        </li>
@@ -102,7 +103,7 @@
          <a href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/02.jpg" alt="Сливочно-кофейное" width="267px" height="267px">
-           <b>380₽/кг</b>
+           <b>380<img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
            <h3>Сливочно-кофейное с кусочками шоколада<h3>
          </a>
        </li>
@@ -110,7 +111,7 @@
          <a href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/03.jpg" alt="Сливочно-клубничное" width="267px" height="267px">
-           <b>355₽/кг</b>
+           <b>355<img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
          </a>
        </li>
@@ -118,14 +119,14 @@
          <a href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/04.jpg" alt="Сливочное крем-брюле" width="267px" height="267px">
-           <b>415₽/кг</b>
+           <b>415<img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
          </a>
        </li>
      </ul>
    </section>
 
-   <section class="benefits">
+   <section class="features">
       <h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
       <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
       <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
@@ -142,7 +143,7 @@
      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
      <form class="email" action="https://echo.htmlacademy.ru" method="post">
        <input type="text" name="email" value="" placeholder="Электронная почта">
-       <button type="button" name="send">Отправить</button>
+       <input type="submit" name="send">Отправить</button>
      </form>
    </article>
 
@@ -188,9 +189,12 @@
 <section class="modal modal-contact">
   <b>Мы обязательно вам ответим!</b>
   <form class="vontact-form" action="https://echo.htmlacademy.ru" method="post">
-    <input class="contact-name" type="text" name="contact-name" value="" placeholder="Как вас зовут?">
-    <input class="contact-email" type="email" name="contact-email" value="" placeholder="Ваша почта для ответа?">
-    <textarea class="contact-comment" rows="10">Напишите что-нибудь...</textarea>
+    <label for="name" class="invisible">Ваше имя</label>
+    <input class="contact-name" type="text" name="contact-name" id="name" placeholder="Как вас зовут?">
+    <label for="email" class="invisible">Ваша электронная почта</label>
+    <input class="contact-email" type="email" name="contact-email" id="email" placeholder="Ваша почта для ответа?">
+    <label for="message" class="invisible">Вашу сообщение</label>
+    <textarea class="contact-comment" rows="10" id="message">Напишите что-нибудь...</textarea>
     <input class="button button-contact-send" type="submit" name="contact-send" value="Отправить">
   </form>
   <button class="modal-close">Закрыть</button>
@@ -198,8 +202,10 @@
 
 <section class="hover login-hover">
   <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-    <input class="login-email" type="email" name="login-email" value="" placeholder="Электронная почта">
-    <input class="login-password" type="password" name="login-password" value="" placeholder="Пароль">
+    <label for="login-email" class="invisible">Ваше имя</label>
+    <input class="login-email" type="email" name="login-email" id="login-email" placeholder="Электронная почта">
+    <label for="password" class="invisible">Ваше имя</label>
+    <input class="login-password" type="password" name="login-password" id="password" placeholder="Пароль">
     <input class="button login-submit-button" type="submit" name="login-button" value="Войти">
     <a class="restore" href="#">Забыли пароль?</a>
     <a class="new-user" href="#">Новая регистрация</a>
