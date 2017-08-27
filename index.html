@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 <header class="page-header">
@@ -13,12 +15,12 @@
     </a>
     <ul class="main-navi-list">
       <li class="main-navi-item"><a href="catalog.html">Каталог</a>
-          <ul class="dropdown-hover-list">
-            <li class="dropdown-hover-item">Новинки</li>
-            <li class="dropdown-hover-item">Сливочное</li>
-            <li class="dropdown-hover-item">Щербеты</li>
-            <li class="dropdown-hover-item">Фруктовый лед</li>
-            <li class="dropdown-hover-item">Мелорин</li>
+          <ul class="hover dropdown-hover-list">
+            <li class="dropdown-hover-item"><a href="#">Новинки</a></li>
+            <li class="dropdown-hover-item"><a href="#">Сливочное</a></li>
+            <li class="dropdown-hover-item"><a href="#">Щербеты</a></li>
+            <li class="dropdown-hover-item"><a href="#">Фруктовый лед</a></li>
+            <li class="dropdown-hover-item"><a href="#">Мелорин</a></li>
           </ul>
       </li>
       <li class="main-navi-item"><a href="delivery.html">Доставка и оплата</a></li>
@@ -42,12 +44,12 @@
       </li>
     </ul>
     <p>С 10 до 20, ежедневно</p>
-    <b class="header-phone">8 812 450-25-25</b>
+    <b>8 812 450-25-25</b>
   </nav>
 </header>
 
 <main class="container">
-  <h1 class="invisible">Gllacy Shop</h1>
+  <h1 class="invisible">Главная страница Gllacy Shop</h1>
   <section class="slider">
     <ul class="slides">
       <li class="slides-item slide-1">
@@ -77,13 +79,13 @@
       <li class="specialties-item raspberry">
         <h3>Малинка даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a href="#">Хочу варенье!</a>
+        <a class="button" href="#">Хочу варенье!</a>
       </li>
 
-      <li class="spetialties-item chocolate">
+      <li class="specialties-item chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-        <a href="#">Хочу шоколадки!<a href="#">
+        <a class="button" href="#">Хочу шоколадки!</a href="#">
       </li>
     </ul>
    </section>
@@ -95,7 +97,7 @@
          <a href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/01.jpg" alt="Сливочное" width="267px" height="267px">
-           <b>310<img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
+           <b><span>310</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
          </a>
        </li>
@@ -103,7 +105,7 @@
          <a href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/02.jpg" alt="Сливочно-кофейное" width="267px" height="267px">
-           <b>380<img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
+           <b><span>380</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
            <h3>Сливочно-кофейное с кусочками шоколада<h3>
          </a>
        </li>
@@ -111,7 +113,7 @@
          <a href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/03.jpg" alt="Сливочно-клубничное" width="267px" height="267px">
-           <b>355<img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
+           <b><span>355</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
            <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
          </a>
        </li>
@@ -119,7 +121,7 @@
          <a href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/04.jpg" alt="Сливочное крем-брюле" width="267px" height="267px">
-           <b>415<img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
+           <b><span>415</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
            <h3>Сливочное крем-брюле с карамельной подливкой</h3>
          </a>
        </li>
@@ -139,11 +141,11 @@
      <a href="blog.html">10 способов сервировки фруктовых щербетов к столу</a>
    </article>
 
-   <article class="Newsletter">
+   <article class="newsletter">
      <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
      <form class="email" action="https://echo.htmlacademy.ru" method="post">
        <input type="text" name="email" value="" placeholder="Электронная почта">
-       <input type="submit" name="send">Отправить</button>
+       <input class="button" type="submit" name="send" value="Отправить">
      </form>
    </article>
 
@@ -171,7 +173,7 @@
     </ul>
 
     <ul class="footer-navi-list">
-      <li><a class="footer-navi-item" href="#"><img src="img/heart.svg" alt="heart" width="15" height="13">Для поставщиков</a></li>
+      <li class="for-providers"><a class="footer-navi-item" href="#"><img src="img/heart.svg" alt="heart" width="15" height="13">Для поставщиков</a></li>
       <li><a class="footer-navi-item" href="#">О производстве</a></li>
       <li><a class="footer-navi-item" href="#">Наши документы</a></li>
       <li><a class="footer-navi-item" href="#">Экологические стандарты</a></li>
