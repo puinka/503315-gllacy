@@ -20,7 +20,7 @@
           <img src="img/logo.svg" alt="Gllacy Shop Logo" width="154" height="64">
        </a>
        <ul class="main-navi-list">
-         <li class="main-navi-item"><a href="catalog.html">Каталог</a>
+         <li class="main-navi-item catalog-link"><a href="catalog.html">Каталог</a>
              <ul class="hover dropdown-hover-list">
                <li class="dropdown-hover-item"><a href="#">Новинки</a></li>
                <li class="dropdown-hover-item"><a href="#">Сливочное</a></li>
@@ -34,13 +34,15 @@
        </ul>
        <ul class="user-navi">
          <li class="user-navi-item">
-           <button class="search"><img src="img/loupe.svg" alt="Поиск" width="17" height="17"></button>
-           <div class="hover serach-hover">
+           <button class="search-btn"></button>
+
+           <div class="serach-hover">
              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
                <label for="search" class="invisible">Поле поиска</label>
                <input class="search-request" type="text" name="search-request" id="search" placeholder="Что ищем?">
              </form>
            </div>
+         
          </li>
          <li class="user-navi-item">
            <button class="enter-btn"><img src="img/entrance.svg" alt="enter" width="21" height="19">Вход</button>
