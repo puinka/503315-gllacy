@@ -9,44 +9,50 @@
 </head>
 <body>
   <header class="page-header">
-    <nav class="main-navi">
-      <a href="index.html" class="main-header-logo">
-         <img src="img/logo.svg" alt="Gllacy Shop Logo" width="154" height="64">
-      </a>
-      <ul class="main-navi-list">
-        <li class="main-navi-item currently-selected"><a class="currently-selected" href="#">Каталог</a>
-            <ul class="dropdown-hover-list">
-              <li class="dropdown-hover-item"><a href="#">Новинки</a></li>
-              <li class="dropdown-hover-item"><a href="#">Сливочное</a></li>
-              <li class="dropdown-hover-item"><a href="#">Щербеты</a></li>
-              <li class="dropdown-hover-item"><a href="#">Фруктовый лед</a></li>
-              <li class="dropdown-hover-item"><a href="#">Мелорин</a></li>
-            </ul>
-        </li>
-        <li class="main-navi-item"><a href="delivery.html">Доставка и оплата</a></li>
-        <li class="main-navi-item"><a href="about.html">О компании</a></li>
-      </ul>
-      <ul class="user-navi">
-        <li class="user-navi-item">
-          <button class="search-btn"><img src="img/loupe.svg" alt="Поиск" width="17" height="17"></button>
-          <div class="hover serach-hover">
-            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-              <label for="search" class="invisible">Поле поиска</label>
-              <input class="search-request" type="text" name="search-request" id="search" placeholder="Что ищем?">
-            </form>
-          </div>
-        </li>
-        <li class="user-navi-item">
-          <button class="enter-btn"><img src="img/entrance.svg" alt="enter" width="21" height="19">Вход</button>
-        </li>
-        <li class="user-navi-item">
-        <button class="cart-btn"><img src="img/basket-red.svg" alt="shopping cart" width="21" height="20">2 товара</button>
-        </li>
-      </ul>
-      <p>С 10 до 20, ежедневно</p>
-      <b>8 812 450-25-25</b>
-    </nav>
-  </header>
+ <nav class="main-navi">
+   <a href="index.html" class="main-header-logo">
+      <img src="img/logo.svg" alt="Gllacy Shop Logo" width="154" height="64">
+   </a>
+   <ul class="main-navi-list">
+     <li class="main-navi-item"><a class="currently-selected" href="catalog.html">Каталог</a>
+     </li>
+     <li class="main-navi-item"><a href="delivery.html">Доставка и оплата</a></li>
+     <li class="main-navi-item"><a href="about.html">О компании</a></li>
+   </ul>
+   <ul class="user-navi">
+     <li class="user-navi-item search-link">
+       <button class="search-btn">Поиск</button>
+
+       <div class="serach-hover">
+         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+           <label for="search" class="invisible">Поле поиска</label>
+           <input class="search-request" type="text" name="search-request" id="search" placeholder="Что ищем?">
+         </form>
+       </div>
+
+     </li>
+     <li class="user-navi-item login-link">
+       <button class="enter-btn">Вход</button>
+       <div class="hover login-hover">
+         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+           <label for="login-email" class="invisible">Ваше имя</label>
+           <input class="login-email" type="email" name="login-email" id="login-email" placeholder="Электронная почта">
+           <label for="password" class="invisible">Ваше имя</label>
+           <input class="login-password" type="password" name="login-password" id="password" placeholder="Пароль">
+           <input class="button login-submit-button" type="submit" name="login-button" value="Войти">
+           <a class="restore" href="#">Забыли пароль?</a>
+           <a class="new-user" href="#">Новая регистрация</a>
+         </form>
+       </div>
+     </li>
+     <li class="user-navi-item">
+     <button class="cart-btn cart-content">2 товара</button>
+     </li>
+   </ul>
+   <p>С 10 до 20, ежедневно</p>
+   <b>8 812 450-25-25</b>
+ </nav>
+</header>
 
   <main class="container">
     <nav class="breadcrumbs">
@@ -92,84 +98,84 @@
       <h2 class="invisible">Продукты</h2>
       <ul class="product-list">
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/01.jpg" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267px" height="267px">
             <b><span>310</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/02.jpg" alt="Сливочно-кофейное с кусочками шоколада" width="267px" height="267px">
             <b><span>380</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочно-кофейное с кусочками шоколада</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/03.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада" width="267px" height="267px">
             <b><span>355</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/04.jpg" alt="Сливочное крем-брюле с карамельной подливкой" width="267px" height="267px">
             <b><span>415</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочное крем-брюле с карамельной подливкой</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/05.jpg" alt="Сливочное с брусничным джемом" width="267px" height="267px">
             <b><span>325</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочное с брусничным джемом</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/06.jpg" alt="Сливочно-черничное с цельными ягодами черники " width="267px" height="267px">
             <b><span>410</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочно-черничное с цельными ягодами черники </h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/07.jpg" alt="Сливочно-лимонное с карамельной присыпкой" width="267px" height="267px">
             <b><span>375</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочно-лимонное с карамельной присыпкой</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/08.jpg" alt="Сливочное с шоколадной стружкой" width="267px" height="267px">
             <b><span>320</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочное с шоколадной стружкой</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/09.jpg" alt="Сливочно-ванильное с кусочками шоколада" width="267px" height="267px">
             <b><span>440</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочно-ванильное с кусочками шоколада</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/10.jpg" alt="Сливочноe с ментоловым сиропом" width="267px" height="267px">
             <b><span>435</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочноe с ментоловым сиропом</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/11.jpg" alt="Сливочное с кусочками черного шоколада" width="267px" height="267px">
             <b><span>355</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочное с кусочками черного шоколада</h3>
           </a>
         </li>
         <li class="product-item">
-          <a href="#">
+          <a class="product-link" href="#">
             <img src="img/12.jpg" alt="Сливочное с мятным сиропом" width="267px" height="267px">
             <b><span>420</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
             <h3>Сливочное с мятным сиропом</h3>

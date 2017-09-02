@@ -29,12 +29,12 @@
                <li class="dropdown-hover-item"><a href="#">Мелорин</a></li>
              </ul>
          </li>
-         <li class="main-navi-item"><a href="delivery.html">Доставка и оплата</a></li>
-         <li class="main-navi-item"><a href="about.html">О компании</a></li>
+         <li class="main-navi-item"><a  href="delivery.html">Доставка и оплата</a></li>
+         <li class="main-navi-item"><a  href="about.html">О компании</a></li>
        </ul>
        <ul class="user-navi">
-         <li class="user-navi-item">
-           <button class="search-btn"></button>
+         <li class="user-navi-item search-link">
+           <button class="search-btn">Поиск</button>
 
            <div class="serach-hover">
              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
@@ -42,13 +42,24 @@
                <input class="search-request" type="text" name="search-request" id="search" placeholder="Что ищем?">
              </form>
            </div>
-         
+
+         </li>
+         <li class="user-navi-item login-link">
+           <button class="enter-btn">Вход</button>
+           <div class="hover login-hover">
+             <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+               <label for="login-email" class="invisible">Ваше имя</label>
+               <input class="login-email" type="email" name="login-email" id="login-email" placeholder="Электронная почта">
+               <label for="password" class="invisible">Ваше имя</label>
+               <input class="login-password" type="password" name="login-password" id="password" placeholder="Пароль">
+               <input class="button login-submit-button" type="submit" name="login-button" value="Войти">
+               <a class="restore" href="#">Забыли пароль?</a>
+               <a class="new-user" href="#">Новая регистрация</a>
+             </form>
+           </div>
          </li>
          <li class="user-navi-item">
-           <button class="enter-btn"><img src="img/entrance.svg" alt="enter" width="21" height="19">Вход</button>
-         </li>
-         <li class="user-navi-item">
-         <button class="cart-btn"><img src="img/basket.svg" alt="shopping cart" width="21" height="20">Пусто</button>
+         <button class="cart-btn">Пусто</button>
          </li>
        </ul>
        <p>С 10 до 20, ежедневно</p>
@@ -102,7 +113,7 @@
      <h2 class="invisible">Hits</h2>
      <ul class="hits-list">
        <li class="hits-item">
-         <a href="#">
+         <a class="hits-link" href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/01.jpg" alt="Сливочное" width="267px" height="267px">
            <b><span>310</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
@@ -110,7 +121,7 @@
          </a>
        </li>
        <li class="hits-item">
-         <a href="#">
+         <a class="hits-link" href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/02.jpg" alt="Сливочно-кофейное" width="267px" height="267px">
            <b><span>380</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
@@ -118,7 +129,7 @@
          </a>
        </li>
        <li class="hits-item">
-         <a href="#">
+         <a class="hits-link" href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/03.jpg" alt="Сливочно-клубничное" width="267px" height="267px">
            <b><span>355</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
@@ -126,7 +137,7 @@
          </a>
        </li>
        <li class="hits-item">
-         <a href="#">
+         <a class="hits-link" href="#">
            <img src="img/hit.svg" alt="hit" width="61" height="61">
            <img src="img/04.jpg" alt="Сливочное крем-брюле" width="267px" height="267px">
            <b><span>415</span><img src="img/ruble.svg" alt="Рублей" width="26" height="31">/кг</b>
@@ -137,11 +148,13 @@
    </section>
 
    <section class="features">
-      <h2>Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-      <p>Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-      <p>Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
-      <p>Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-      <p>Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
+      <h2 class="features-title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+      <ul class="features-list">
+         <li class="features-item"><p class="icecream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
+         <li class="features-item"><p class="leaf">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p></li>
+         <li class="features-item"><p class="cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
+         <li class="features-item"><p class="termometer">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
+      </ul>
     </section>
 
    <article class="blogpost">
@@ -156,10 +169,9 @@
        <input class="button" type="submit" name="send" value="Отправить">
      </form>
    </article>
-
+   </div>
    <section class="map">
      <img src="img/pin.svg" alt="pin">
-     <img src="img/map.jpg">
      <div class="contacts">
        <p>Адрес главного офиса и офлайн магазина</p>
        <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
@@ -210,18 +222,8 @@
   <button class="modal-close">Закрыть</button>
 </section>
 
-<section class="hover login-hover">
-  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-    <label for="login-email" class="invisible">Ваше имя</label>
-    <input class="login-email" type="email" name="login-email" id="login-email" placeholder="Электронная почта">
-    <label for="password" class="invisible">Ваше имя</label>
-    <input class="login-password" type="password" name="login-password" id="password" placeholder="Пароль">
-    <input class="button login-submit-button" type="submit" name="login-button" value="Войти">
-    <a class="restore" href="#">Забыли пароль?</a>
-    <a class="new-user" href="#">Новая регистрация</a>
-  </form>
-</section>
-   </div>
+
+
  </div>
   </body>
 </html>
