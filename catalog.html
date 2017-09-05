@@ -10,50 +10,54 @@
 <body>
 
   <header class="page-header">
-     <nav class="main-navi">
-   <a href="index.html" class="main-header-logo">
-      <img src="img/logo.svg" alt="Gllacy Shop Logo" width="154" height="64">
-   </a>
-   <ul class="main-navi-list">
-     <li class="main-navi-item"><a class="currently-selected" href="catalog.html">Каталог</a>
-     </li>
-     <li class="main-navi-item"><a href="delivery.html">Доставка и оплата</a></li>
-     <li class="main-navi-item"><a href="about.html">О компании</a></li>
-   </ul>
-   <ul class="user-navi">
-     <li class="user-navi-item search-link">
-       <button class="search-btn">Поиск</button>
+    <div class="navi-wrapper">
+      <nav class="main-navi container">
+       <a href="index.html" class="main-navi-logo"><img src="img/logo.svg" alt="Gllacy Shop Logo" width="154" height="64"></a>
+       <ul class="main-navi-list">
+         <li class="main-navi-item catalog-link"><a href="#" class="currently-selected">Каталог</a>
+         </li>
+         <li class="main-navi-item"><a  href="delivery.html">Доставка и оплата</a></li>
+         <li class="main-navi-item"><a  href="about.html">О компании</a></li>
+       </ul>
+       <ul class="user-navi-list">
+          <li class="user-navi-item search-link">
+            <a class="search-btn"><span class="invisible">Поиск<span></a>
+              <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                <label for="search" class="invisible">Поле поиска</label>
+                <input class="search-request" type="text" name="search-request" id="search" placeholder="Что ищем?">
+              </form>
+          </li>
+          <li class="user-navi-item login-link">
+            <a class="enter-btn">Вход</a>
+            <div class="hover login-hover">
+               <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                 <label for="login-email" class="invisible">Ваше имя</label>
+                 <input class="login-email" type="email" name="login-email" id="login-email" placeholder="Электронная почта">
+                 <label for="password" class="invisible">Ваше имя</label>
+                 <input class="login-password" type="password" name="login-password" id="password" placeholder="Пароль">
+                 <div class="user-navi-login-form-bottom-wrapper">
+                 <input class="button login-submit-button" type="submit" name="login-button" value="Войти">
+                 <div class="user-navi-login-form-link-container">
+                  <a class="restore" href="#">Забыли пароль?</a>
+                  <a class="new-user" href="#">Новая регистрация</a>
+                 </div>
+               </div>
+               </form>
+            </div>
+          </li>
+          <li class="user-navi-item cart-content">
+             <a class="cart-btn">2 товара</a>
+          </li>
+         </ul>
+   </nav>
+   <div class="main-navi-contacts container">
+       <p class="contacts-block">С 10 до 20, ежедневно
+         <a class="main-navi-contacts-phone" href="tel:+78124502525">8 812 450-25-25</a>
+       </p>
 
-       <div class="serach-hover">
-         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-           <label for="search" class="invisible">Поле поиска</label>
-           <input class="search-request" type="text" name="search-request" id="search" placeholder="Что ищем?">
-         </form>
-       </div>
-
-     </li>
-     <li class="user-navi-item login-link">
-       <button class="enter-btn">Вход</button>
-       <div class="hover login-hover">
-         <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-           <label for="login-email" class="invisible">Ваше имя</label>
-           <input class="login-email" type="email" name="login-email" id="login-email" placeholder="Электронная почта">
-           <label for="password" class="invisible">Ваше имя</label>
-           <input class="login-password" type="password" name="login-password" id="password" placeholder="Пароль">
-           <input class="button login-submit-button" type="submit" name="login-button" value="Войти">
-           <a class="restore" href="#">Забыли пароль?</a>
-           <a class="new-user" href="#">Новая регистрация</a>
-         </form>
-       </div>
-     </li>
-     <li class="user-navi-item">
-     <button class="cart-btn cart-content">2 товара</button>
-     </li>
-   </ul>
-      <p>С 10 до 20, ежедневно</p>
-      <b>8 812 450-25-25</b>
-    </nav>
-   </header>
+   </div>
+   </div>
+  </header>
 
   <main class="container">
     <nav class="breadcrumbs">

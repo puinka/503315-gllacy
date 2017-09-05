@@ -407,7 +407,8 @@ li.main-navi-item > a:active{
 }
 
 .login-link:hover .enter-btn,
-.cart-link:hover .cart-btn {
+.cart-link:hover .cart-btn,
+.cart-content:hover .cart-btn {
   color: #000000;
   background-color: rgba(255,255,255,1);
 }
@@ -427,7 +428,7 @@ li.main-navi-item > a:active{
 
 }
 
-.user-navi-list .cart-btn::before{
+.cart-link .cart-btn::before{
   content: " ";
   position: absolute;
   width: 21px;
@@ -436,6 +437,19 @@ li.main-navi-item > a:active{
   left: 16px;
 
   background-image: url("../img/basket_white.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.cart-content .cart-btn::before{
+  content: " ";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  top: 8px;
+  left: 16px;
+
+  background-image: url("../img/basket-red.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -552,7 +566,6 @@ li.main-navi-item > a:active{
 }
 
 .slider ul,
-.hits ul,
 .products ul{
   margin: 0;
   padding: 0;
@@ -598,11 +611,13 @@ li.main-navi-item > a:active{
 
 /* Hits */
 
-.hits-list {
+.hits-list,
+.product-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 40px;
+  list-style: none;
 }
 
 .product-item {
@@ -610,6 +625,7 @@ li.main-navi-item > a:active{
   min-height: 322px;
   position: relative;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .product-item b{
@@ -655,6 +671,7 @@ li.main-navi-item > a:active{
   font-weight: 500;
   font-size: 16px;
   text-decoration: none;
+  margin-top: 0;
 }
 
 .product-item h3::after {
@@ -677,7 +694,7 @@ li.main-navi-item > a:active{
 .features {
   color: #323232;
   border-radius: 15px;
-  background: #eee2c5 url("../img/waffle-background.jpg") center;
+  background: #eee2c5 url("../img/waffle_small.jpg") center;
   padding: 26px;
 }
 
@@ -746,6 +763,16 @@ li.main-navi-item > a:active{
 .features p{
   font-size: 16px;
   color: #323232;
+}
+
+
+/* additional info*/
+
+.additional-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 40px;
 }
 
 /* blogpost */
@@ -836,18 +863,7 @@ li.main-navi-item > a:active{
 
 /* CATALOG PAGE */
 
-.user-navi-list .cart-content::before{
-  content: " ";
-  position: absolute;
-  width: 21px;
-  height: 20px;
-  top: 8px;
-  left: 16px;
 
-  background-image: url("../img/basket-red.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-}
 
 .breadcrumbs-list {
   list-style: none;
