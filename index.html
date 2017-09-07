@@ -34,18 +34,24 @@
               <li class="user-navi-item search-link">
                 <a class="search-btn"><span class="invisible">Поиск<span></a>
                   <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-                    <label for="search" class="invisible">Поле поиска</label>
-                    <input class="search-request" type="text" name="search-request" id="search" placeholder="Что ищем?">
+                    <div class="search-wrapper">
+                    <input class="search-request" type="text" name="search-request" id="search">
+                    <label for="search">Что ищем?</label>
+                    </div>
                   </form>
               </li>
               <li class="user-navi-item login-link">
                 <a class="enter-btn">Вход</a>
                 <div class="hover login-hover">
                    <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                     <label for="login-email" class="invisible">Ваше имя</label>
-                     <input class="login-email" type="email" name="login-email" id="login-email" placeholder="Электронная почта">
-                     <label for="password" class="invisible">Ваше имя</label>
-                     <input class="login-password" type="password" name="login-password" id="password" placeholder="Пароль">
+                     <div class="login-name-wrapper">
+                     <input class="login-name" type="text" name="login-name" id="login-name">
+                     <label for="login-name">Ваше имя</label>
+                     </div>
+                     <div class="login-password-wrapper">
+                     <input class="login-password" type="password" name="login-password" id="password">
+                     <label for="password">Пароль</label>
+                     </div>
                      <div class="user-navi-login-form-bottom-wrapper">
                      <input class="button login-submit-button" type="submit" name="login-button" value="Войти">
                      <div class="user-navi-login-form-link-container">
@@ -172,7 +178,8 @@
      <form class="newsletter-form" action="https://echo.htmlacademy.ru" method="post">
        <p class="newsletter-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
        <div class="newsletter-form-wrapper">
-       <input class="email" type="text" name="email" value="" placeholder="Электронная почта">
+       <input class="email" type="text" name="newsletter-email" value="">
+       <label for="newsletter-email">Электронная почта </label>
        <input class="button" type="submit" name="send" value="Отправить">
      </div>
      </form>
@@ -237,18 +244,18 @@
    <section class="modal modal-contact">
   <h2>Мы обязательно вам ответим!</h2>
   <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-    <p>
-    <input class="contact-name" type="text" name="contact-name" id="name" placeholder="Как вас зовут?">
-    <label for="name" class="invisible">Ваше имя</label>
-    </p>
-    <p>
-    <input class="contact-email" type="email" name="contact-email" id="email" placeholder="Ваша почта для ответа?">
-    <label for="email" class="invisible">Ваша электронная почта</label>
-    </p>
-    <p>
-    <label for="message" class="invisible">Вашу сообщение</label>
-    <textarea class="contact-comment" rows="10" id="message">Напишите что-нибудь...</textarea>
-    </p>
+    <div class="contact-name-wrapper">
+    <input class="contact-name" type="text" name="contact-name" id="contact-name">
+    <label for="contact-name">Как вас зовут?</label>
+    </div>
+    <div class="contact-email-wrapper">
+    <input class="contact-email" type="email" name="contact-email" id="contact-email">
+    <label for="contact-email">Ваша почта для ответа</label>
+  </div>
+    <div class="contact-comment-wrapper">
+    <textarea class="contact-comment" rows="10" id="contact-comment"></textarea>
+    <label for="contact-comment">Напишите что-нибудь...</label>
+  </div>
     <input class="button button-contact-send" type="submit" name="contact-send" value="Отправить">
   </form>
   <button class="modal-close">Закрыть</button>
