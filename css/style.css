@@ -805,7 +805,7 @@ li.main-navi-item > a:active{
   right: -12px;
   border-radius: 4px;
   box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.4);
-  z-index: 5;
+  z-index: -1;
 }
 
 .quick-look {
