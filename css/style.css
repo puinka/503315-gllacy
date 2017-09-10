@@ -219,14 +219,14 @@ body > input[type="radio"] {
   font-weight: 700;
   line-height: 16px;
   vertical-align: middle;
-  margin-right: -16px;
+  margin-right: 1px;
 }
 
 .main-navi-item a{
   color: #ffffff;
   text-decoration: none;
   display: block;
-  padding: 8px 20px;
+  padding: 8px 14px;
   vertical-align: middle;
 }
 
@@ -294,9 +294,9 @@ body > input[type="radio"] {
 li.main-navi-item > a:not(.currently-selected)::after{
   content: "";
   position: absolute;
-  right: 20px;
+  right: 13px;
   bottom: 7px;
-  left: 20px;
+  left: 13px;
   height: 1px;
   background-color: rgba(255,255,255,.4);
 }
