@@ -730,6 +730,7 @@ li.main-navi-item > a:active{
   flex-basis: 267px;
   text-align: center;
   margin-bottom: 40px;
+  z-index: 10;
 }
 
 .product-item:hover .product-item-hover {
@@ -779,6 +780,10 @@ li.main-navi-item > a:active{
 
 .product-item b{
   padding-left: 30px;
+}
+
+.product-item img {
+  z-index: 2;
 }
 
 .product-item .product-title {
