@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-min.css">
   </head>
   <body>
     <input type="radio" name="slider-group" id="btn-1" checked>
@@ -17,7 +17,7 @@
           <img class="main-navi-logo" src="img/logo.svg" alt="Gllacy Shop Logo" width="154" height="64">
           <ul class="main-navi-list">
             <li class="main-navi-item catalog-link">
-              <a href="#">Каталог</a>
+              <a href="catalog.html">Каталог</a>
               <ul class="hover dropdown-hover-list">
                 <li class="dropdown-hover-item"><a href="#">Новинки</a></li>
                 <li class="dropdown-hover-item"><a href="catalog.html">Сливочное</a></li>
@@ -122,7 +122,7 @@
               <span class="product-price">310<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
               <a class="product-title" href="catalog.html">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
               <div class="product-item-hover" >
-                 <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+                <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
               </div>
             </li>
             <li class="hit product-item">
@@ -130,7 +130,7 @@
               <span class="product-price">380<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
               <a class="product-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
               <div class="product-item-hover">
-                 <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+                <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
               </div>
             </li>
             <li class="hit product-item">
@@ -138,7 +138,7 @@
               <span class="product-price">355<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
               <a class="product-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
               <div class="product-item-hover">
-                 <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+                <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
               </div>
             </li>
             <li class="hit product-item">
@@ -146,7 +146,7 @@
               <span class="product-price">415<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
               <a class="product-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
               <div class="product-item-hover">
-                 <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+                <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
               </div>
             </li>
           </ul>
@@ -192,7 +192,7 @@
             <p class="map-text">Для заказов по телефону:</p>
             <p class="map-phone">8 812 450-25-25</p>
             <p class="map-openning-hours">(с 10 до 20 ежедневно)</p>
-            <a class="button" href="contact-form.html">Форма обратной связи</a>
+            <a class="button contact-link" href="contact-form.html">Форма обратной связи</a>
           </div>
         </section>
       </main>
@@ -260,12 +260,13 @@
           <label for="contact-email">Ваша почта для ответа</label>
         </div>
         <div class="contact-comment-wrapper">
-          <textarea class="contact-comment" rows="10" id="contact-comment"></textarea>
+          <textarea class="contact-comment" rows="7" id="contact-comment"></textarea>
           <label for="contact-comment">Напишите что-нибудь...</label>
         </div>
         <input class="button button-contact-send" type="submit" name="contact-send" value="Отправить">
       </form>
       <button class="modal-close">Закрыть</button>
     </section>
+    <script type="text/javascript" src="js/script-min.js"></script>
   </body>
 </html>

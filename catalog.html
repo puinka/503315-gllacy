@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style-min.css">
   </head>
   <body>
     <header class="page-header">
@@ -112,8 +112,11 @@
           <div class="price-block">
             <p>Цена: 100 руб. – 500 руб.</p>
             <div class="filters-form-input-wrapper range">
-              <input class="range-slider" type="range" min="100" step="10" max="500" value="450">
-              <input class="range-slider" type="range" min="100" step="10" max="500" value="250">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
           </div>
           <div class="fat-block">
@@ -146,7 +149,7 @@
             <span class="product-price">310<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
           <li class="product-item">
@@ -154,7 +157,7 @@
             <span class="product-price">380<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочно-кофейное с кусочками шоколада</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
           <li class="product-item">
@@ -162,7 +165,7 @@
             <span class="product-price">355<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
           <li class="product-item">
@@ -170,7 +173,7 @@
             <span class="product-price">415<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочное крем-брюле с карамельной подливкой</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
           <li class="product-item">
@@ -178,7 +181,7 @@
             <span class="product-price">325<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочное с брусничным джемом</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
           <li class="product-item">
@@ -186,7 +189,7 @@
             <span class="product-price">410<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочно-черничное с цельными ягодами черники</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
           <li class="product-item">
@@ -194,7 +197,7 @@
             <span class="product-price">375<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочно-лимонное с карамельной присыпкой</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
           <li class="product-item">
@@ -202,7 +205,7 @@
             <span class="product-price">320<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочное с шоколадной стружкой</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
           <li class="product-item">
@@ -210,7 +213,7 @@
             <span class="product-price">440<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочно-ванильное с кусочками шоколада</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
           <li class="product-item">
@@ -222,19 +225,19 @@
             </div>
           </li>
           <li class="product-item">
-          <img src="img/11.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
-          <span class="product-price">355<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
-          <a class="product-title" href="#">Сливочное с кусочками черного шоколада</a>
-          <div class="product-item-hover">
-             <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
-          </div>
+            <img src="img/11.jpg" alt="Сливочное с кусочками черного шоколада" width="267" height="267">
+            <span class="product-price">355<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
+            <a class="product-title" href="#">Сливочное с кусочками черного шоколада</a>
+            <div class="product-item-hover">
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="product-item">
             <img src="img/12.jpg" alt="Сливочное с мятным сиропом" width="267" height="267">
             <span class="product-price">420<img class="rub" src="img/ruble.svg" alt="Рублей" width="26" height="31"><b>/кг</b></span>
             <a class="product-title" href="#">Сливочное с мятным сиропом</a>
             <div class="product-item-hover">
-               <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
+              <button class="button quick-look" type="button" name="button">Быстрый просмотр</button>
             </div>
           </li>
         </ul>
@@ -306,18 +309,5 @@
         </p>
       </div>
     </footer>
-    <section class="modal modal-contact">
-      <b>Мы обязательно вам ответим!</b>
-      <form class="contact-form" action="https://echo.htmlacademy.ru" method="post">
-        <label for="contact-name" class="invisible">Ваше имя</label>
-        <input class="contact-name" type="text" name="contact-name" id="contact-name" placeholder="Как вас зовут?">
-        <label for="contact-email" class="invisible">Ваша электронная почта</label>
-        <input class="contact-email" type="email" name="contact-email" id="contact-email" placeholder="Ваша почта для ответа?">
-        <label for="message" class="invisible">Вашу сообщение</label>
-        <textarea class="contact-comment" rows="10" id="message">Напишите что-нибудь...</textarea>
-        <input class="button button-contact-send" type="submit" name="contact-send" value="Отправить">
-      </form>
-      <button class="modal-close">Закрыть</button>
-    </section>
   </body>
 </html>
